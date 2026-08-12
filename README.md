@@ -11,17 +11,20 @@ demanda quando um reprocessamento ou consulta pontual exige o dado bruto.
 `https://github.com/dbragafrederico-sys/dbf-intelligence-bcu` (banco
 processado, índices calculados — fonte de verdade operacional)
 
-**Status (12/08/2026):** repositório criado e estrutura de pastas montada
-via Claude Code, a partir do briefing técnico
-`DBF_Briefing_Tecnico_Migracao_Arquivo_Bruto_12-08-2026.md`. Migração em
-andamento, por lote — enviada manualmente por Daniel via anexos no chat
-(o ambiente de execução do Claude Code não acessa a biblioteca do projeto
-no Claude.ai diretamente):
+**Status (12/08/2026):** migração da Fase 1 **concluída**. Repositório
+criado e estrutura de pastas montada via Claude Code, a partir do briefing
+técnico `DBF_Briefing_Tecnico_Migracao_Arquivo_Bruto_12-08-2026.md`, e
+todos os arquivos enviados manualmente por Daniel via anexos no chat (o
+ambiente de execução do Claude Code não acessa a biblioteca do projeto no
+Claude.ai diretamente):
 
 - ✅ `regulatorio-referencia/` — 3/3 arquivos enviados
-- ⏳ `dados-fiscais-brutos/` — 1/2 arquivos enviados (`dadosfiscapartir2019_1.xlsx` ok; falta `dadosfisc19982018_1.xlsx`)
+- ✅ `dados-fiscais-brutos/` — 2/2 arquivos enviados
 - ✅ `historico-requalificacao/` — 20/20 arquivos enviados (2007–2026, inclui `2024requalificacao1.pdf`)
 - ✅ `historico-troca-botijao/` — 20/20 arquivos enviados (2007–2026)
+
+Total: 45 arquivos migrados (a série histórica veio com 20 anos por pasta,
+não 19 como estimado no briefing original).
 
 ## Por que este repositório existe
 
@@ -107,9 +110,7 @@ configuração persistente. O repositório é e deve continuar **privado**.
 
 ## Pendências em aberto
 
-1. **Enviar os 42 arquivos da Fase 1** — pendente de upload manual pelo
-   Daniel (anexados numa sessão do Claude Code, já que o ambiente não
-   acessa a biblioteca do projeto Claude.ai diretamente).
+1. ~~Enviar os arquivos da Fase 1~~ — concluído em 12/08/2026 (45 arquivos).
 2. Fase 2 (avaliar depois): decidir se os DataBooks ativos (GLP v10,
    Combustíveis v4, MAE v2 — ~24MB) migram para cá com um fluxo de
    clone→query como o do BCU, ou permanecem na biblioteca do Claude.ai.
