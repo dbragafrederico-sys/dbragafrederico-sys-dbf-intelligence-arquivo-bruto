@@ -13,12 +13,15 @@ processado, índices calculados — fonte de verdade operacional)
 
 **Status (12/08/2026):** repositório criado e estrutura de pastas montada
 via Claude Code, a partir do briefing técnico
-`DBF_Briefing_Tecnico_Migracao_Arquivo_Bruto_12-08-2026.md`. **Os 42
-arquivos da Fase 1 ainda não foram enviados** — o ambiente de execução do
-Claude Code não tem acesso direto à biblioteca do projeto no Claude.ai, então
-o envio depende de os arquivos serem anexados manualmente numa sessão para
-upload. Este README será atualizado assim que a migração dos arquivos for
-concluída.
+`DBF_Briefing_Tecnico_Migracao_Arquivo_Bruto_12-08-2026.md`. Migração em
+andamento, por lote — enviada manualmente por Daniel via anexos no chat
+(o ambiente de execução do Claude Code não acessa a biblioteca do projeto
+no Claude.ai diretamente):
+
+- ✅ `regulatorio-referencia/` — 3/3 arquivos enviados
+- ⏳ `dados-fiscais-brutos/` — pendente (2 arquivos)
+- ⏳ `historico-requalificacao/` — pendente (19 arquivos)
+- ⏳ `historico-troca-botijao/` — pendente (19 arquivos)
 
 ## Por que este repositório existe
 
