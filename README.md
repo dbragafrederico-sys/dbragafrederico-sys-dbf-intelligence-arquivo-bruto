@@ -20,8 +20,8 @@ no Claude.ai diretamente):
 
 - ✅ `regulatorio-referencia/` — 3/3 arquivos enviados
 - ⏳ `dados-fiscais-brutos/` — pendente (2 arquivos)
-- ⏳ `historico-requalificacao/` — pendente (19 arquivos)
-- ⏳ `historico-troca-botijao/` — pendente (19 arquivos)
+- ✅ `historico-requalificacao/` — 20/20 arquivos enviados (2007–2026, inclui `2024requalificacao1.pdf`)
+- ✅ `historico-troca-botijao/` — 20/20 arquivos enviados (2007–2026)
 
 ## Por que este repositório existe
 
