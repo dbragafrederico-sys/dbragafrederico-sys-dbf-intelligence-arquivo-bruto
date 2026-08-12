@@ -19,7 +19,7 @@ andamento, por lote — enviada manualmente por Daniel via anexos no chat
 no Claude.ai diretamente):
 
 - ✅ `regulatorio-referencia/` — 3/3 arquivos enviados
-- ⏳ `dados-fiscais-brutos/` — pendente (2 arquivos)
+- ⏳ `dados-fiscais-brutos/` — 1/2 arquivos enviados (`dadosfiscapartir2019_1.xlsx` ok; falta `dadosfisc19982018_1.xlsx`)
 - ✅ `historico-requalificacao/` — 20/20 arquivos enviados (2007–2026, inclui `2024requalificacao1.pdf`)
 - ✅ `historico-troca-botijao/` — 20/20 arquivos enviados (2007–2026)
 
