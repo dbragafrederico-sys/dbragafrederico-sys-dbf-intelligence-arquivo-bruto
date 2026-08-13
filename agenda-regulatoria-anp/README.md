@@ -8,21 +8,29 @@ dados já extraídos, estruturados e carregados em produção não estão aqui.
 
 ## Status do arquivamento (13/08/2026)
 
-| Arquivo nesta pasta | Nome original | Status |
-|---|---|---|
-| `2017-2018_agenda-lancamento.pdf` | `agendaregulatoria201720181.pdf` | ✅ arquivado |
-| `2020-2021_agenda-lancamento_v1-rascunho.pdf` | `agendaregulatoria20202021v1.pdf` | ✅ arquivado |
-| `2020-2021_agenda-lancamento_v3.0-30-01-2020.pdf` | `agendaregulatoria20202021v3.pdf` | ✅ arquivado |
-| `2022-2023_relatorio-acompanhamento_1o-PC-jul2022.pdf` | `agenda-regulatoria-2022-2023-1.pdf` | ✅ arquivado |
-| `2022-2023_relatorio-acompanhamento_5o-PC-jul2024-AR-estendida.pdf` | `agenda-regulatoria-2022-2023-5.pdf` | ✅ arquivado |
+| Arquivo nesta pasta | Status |
+|---|---|
+| `2017-2018_agenda-lancamento.pdf` | ✅ arquivado |
+| `2020-2021_agenda-lancamento_v1-rascunho.pdf` | ✅ arquivado |
+| `2020-2021_agenda-lancamento_v3.0-30-01-2020.pdf` | ✅ arquivado |
+| `2022-2023_relatorio-acompanhamento_1o-PC-jul2022.pdf` | ✅ arquivado (reconstrução Claude — ver nota abaixo) |
+| `2022-2023_relatorio-acompanhamento_5o-PC-jul2024-AR-estendida.pdf` | ⏳ **pendente de reenvio** — versão anterior descartada, aguardando substituição autoritativa |
 
-**Arquivamento completo — os 5 PDFs-fonte estão todos aqui.** Os dois
-últimos (2022-2023, 1º e 5º PC) chegaram num upload separado com extensão
-`.txt` em vez de `.pdf` (conteúdo binário confirmado como PDF válido —
-estrutura verificada: cabeçalho `%PDF-1.7`, `xref`/`trailer`/`%%EOF`
-íntegros, contagem de páginas do container batendo com o esperado — 155 e
-200 páginas respectivamente); renomeados para `.pdf` na cópia arquivada
-aqui. Seguro remover os 5 originais da biblioteca do projeto Claude.ai.
+**4 de 5 confirmados. O 5º PC (2022-2023) ainda não tem uma versão
+autoritativa arquivada** — o arquivo que estava nesta posição foi
+descartado por instrução explícita (possível mix-up entre sessões) e
+ainda não foi substituído por um verificado. Não remover o original desse
+item específico da biblioteca do projeto Claude.ai até a substituição
+chegar e ser confirmada aqui.
+
+**Nota sobre os arquivos do biênio 2022-2023 (1º e 5º PC):** o documento
+oficial da ANP para essas duas posições nunca esteve disponível em PDF
+válido nesta cadeia — o arquivo original de origem estava salvo como
+texto puro. O PDF de `2022-2023_relatorio-acompanhamento_1o-PC-jul2022.pdf`
+arquivado aqui é uma **reconstrução gerada por Claude** a partir desse
+texto-fonte (mesmo conteúdo, sem edição de texto; formatação diferente do
+documento oficial da ANP). Se o PDF oficial da ANP for localizado no
+futuro, deve substituir este arquivo mantendo o mesmo nome.
 
 ## 1. 2022-2023: relatórios de acompanhamento, não agenda de lançamento
 
