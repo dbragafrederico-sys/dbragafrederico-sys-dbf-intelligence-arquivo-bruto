@@ -14,23 +14,20 @@ dados já extraídos, estruturados e carregados em produção não estão aqui.
 | `2020-2021_agenda-lancamento_v1-rascunho.pdf` | ✅ arquivado |
 | `2020-2021_agenda-lancamento_v3.0-30-01-2020.pdf` | ✅ arquivado |
 | `2022-2023_relatorio-acompanhamento_1o-PC-jul2022.pdf` | ✅ arquivado (reconstrução Claude — ver nota abaixo) |
-| `2022-2023_relatorio-acompanhamento_5o-PC-jul2024-AR-estendida.pdf` | ⏳ **pendente de reenvio** — versão anterior descartada, aguardando substituição autoritativa |
+| `2022-2023_relatorio-acompanhamento_5o-PC-jul2024-AR-estendida.pdf` | ✅ arquivado (reconstrução Claude — ver nota abaixo) |
 
-**4 de 5 confirmados. O 5º PC (2022-2023) ainda não tem uma versão
-autoritativa arquivada** — o arquivo que estava nesta posição foi
-descartado por instrução explícita (possível mix-up entre sessões) e
-ainda não foi substituído por um verificado. Não remover o original desse
-item específico da biblioteca do projeto Claude.ai até a substituição
-chegar e ser confirmada aqui.
+**Arquivamento completo — 5 de 5 confirmados.** Seguro remover os 5
+originais da biblioteca do projeto Claude.ai.
 
 **Nota sobre os arquivos do biênio 2022-2023 (1º e 5º PC):** o documento
 oficial da ANP para essas duas posições nunca esteve disponível em PDF
 válido nesta cadeia — o arquivo original de origem estava salvo como
-texto puro. O PDF de `2022-2023_relatorio-acompanhamento_1o-PC-jul2022.pdf`
-arquivado aqui é uma **reconstrução gerada por Claude** a partir desse
+texto puro. Os PDFs de `2022-2023_relatorio-acompanhamento_1o-PC-jul2022.pdf`
+e `2022-2023_relatorio-acompanhamento_5o-PC-jul2024-AR-estendida.pdf`
+arquivados aqui são **reconstruções geradas por Claude** a partir desse
 texto-fonte (mesmo conteúdo, sem edição de texto; formatação diferente do
 documento oficial da ANP). Se o PDF oficial da ANP for localizado no
-futuro, deve substituir este arquivo mantendo o mesmo nome.
+futuro, deve substituir esses arquivos mantendo os mesmos nomes.
 
 ## 1. 2022-2023: relatórios de acompanhamento, não agenda de lançamento
 
