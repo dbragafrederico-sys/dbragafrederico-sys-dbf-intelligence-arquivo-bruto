@@ -13,14 +13,16 @@ dados já extraídos, estruturados e carregados em produção não estão aqui.
 | `2017-2018_agenda-lancamento.pdf` | `agendaregulatoria201720181.pdf` | ✅ arquivado |
 | `2020-2021_agenda-lancamento_v1-rascunho.pdf` | `agendaregulatoria20202021v1.pdf` | ✅ arquivado |
 | `2020-2021_agenda-lancamento_v3.0-30-01-2020.pdf` | `agendaregulatoria20202021v3.pdf` | ✅ arquivado |
-| *(pendente)* | `agenda-regulatoria-2022-2023-1.pdf` | ⏳ **não enviado ainda** — 1º relatório de acompanhamento (1º PC, jul/2022) |
-| *(pendente)* | `agenda-regulatoria-2022-2023-5.pdf` | ⏳ **não enviado ainda** — 5º relatório de acompanhamento (5º PC, jul/2024, AR estendida) |
+| `2022-2023_relatorio-acompanhamento_1o-PC-jul2022.pdf` | `agenda-regulatoria-2022-2023-1.pdf` | ✅ arquivado |
+| `2022-2023_relatorio-acompanhamento_5o-PC-jul2024-AR-estendida.pdf` | `agenda-regulatoria-2022-2023-5.pdf` | ✅ arquivado |
 
-**Os dois PDFs do biênio 2022-2023 ainda não foram enviados a este
-repositório.** Os dados extraídos deles já estão em produção (ver seção 3
-abaixo), mas os arquivos PDF originais continuam pendentes de upload. Não
-remover esses dois da biblioteca do projeto Claude.ai até que apareçam
-aqui.
+**Arquivamento completo — os 5 PDFs-fonte estão todos aqui.** Os dois
+últimos (2022-2023, 1º e 5º PC) chegaram num upload separado com extensão
+`.txt` em vez de `.pdf` (conteúdo binário confirmado como PDF válido —
+estrutura verificada: cabeçalho `%PDF-1.7`, `xref`/`trailer`/`%%EOF`
+íntegros, contagem de páginas do container batendo com o esperado — 155 e
+200 páginas respectivamente); renomeados para `.pdf` na cópia arquivada
+aqui. Seguro remover os 5 originais da biblioteca do projeto Claude.ai.
 
 ## 1. 2022-2023: relatórios de acompanhamento, não agenda de lançamento
 
