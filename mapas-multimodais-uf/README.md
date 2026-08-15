@@ -10,10 +10,10 @@ de projeto específico (Frente 4, Inteligência Territorial).
 | Arquivos | Fonte | URL | Status |
 |---|---|---|---|
 | `se.pdf`, `brasil.pdf` | DNIT GEO | gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/dnit-geo/mapas-multimodais | ✅ arquivados |
-| `rr.pdf`, `ap.pdf` | BIT/MT | gov.br/transportes/pt-br/assuntos/dados-de-transportes/bit/bit-mapas | ✅ arquivados |
-| Demais 24 UFs (`ac`, `al`, `am`, `ba`, `ce`, `df`, `es`, `go`, `ma`, `mg`, `ms`, `mt`, `pa`, `pb`, `pe`, `pi`, `pr`, `rj`, `rn`, `ro`, `rs`, `sc`, `sp`, `to`) | BIT/MT | gov.br/transportes/pt-br/assuntos/dados-de-transportes/bit/bit-mapas | ⏳ pendentes |
+| `rr.pdf`, `ap.pdf`, `ce.pdf`, `rn.pdf`, `al.pdf`, `pe.pdf`, `pb.pdf` | BIT/MT | gov.br/transportes/pt-br/assuntos/dados-de-transportes/bit/bit-mapas | ✅ arquivados |
+| Demais 19 UFs (`ac`, `am`, `ba`, `df`, `es`, `go`, `ma`, `mg`, `ms`, `mt`, `pa`, `pi`, `pr`, `rj`, `ro`, `rs`, `sc`, `sp`, `to`) | BIT/MT | gov.br/transportes/pt-br/assuntos/dados-de-transportes/bit/bit-mapas | ⏳ pendentes |
 
-**4 de 28 arquivados até agora.** Não remover os originais da biblioteca do
+**9 de 28 arquivados até agora.** Não remover os originais da biblioteca do
 projeto Claude.ai até o arquivamento completo ser confirmado aqui.
 
 ## Repositórios relacionados
