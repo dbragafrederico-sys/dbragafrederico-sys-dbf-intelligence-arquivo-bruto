@@ -26,6 +26,29 @@ Claude.ai diretamente):
 Total: 45 arquivos migrados (a série histórica veio com 20 anos por pasta,
 não 19 como estimado no briefing original).
 
+**Status (18/08/2026):** backup emergencial pós-exclusão de biblioteca —
+10 arquivos que haviam sido excluídos da biblioteca do projeto Claude.ai
+**sem confirmação prévia de migração** foram localizados (auditoria de
+rastreabilidade) e reenviados por Daniel para backup imediato, sem
+processamento:
+
+- ✅ `regulatorio-referencia/` — +5 PDFs regulatórios (Resolução ANP
+  950/2023, Resolução ANP 957/2023, Nota Técnica 23/2025/SDC/ANP-RJ,
+  Nota Técnica 27/2025/SDC/ANP-RJ, Decreto nº 23.467/2025 de Mogi das
+  Cruzes)
+- ✅ `exportacoes-anp-brutas/` (pasta nova) — 2 exportações brutas ANP com
+  tabela de destino conhecida no BCU (`posto_combustivel`,
+  `revenda_glp`), datadas de 14/08/2026, pendentes de processamento via
+  `detectar_movimentacao.py` — **bloqueado**: a estrutura dessas
+  exportações brutas não corresponde ao formato que o script espera
+  (sheets `02_BASE_TRATADA`/`02_BASE_POSTOS` de um DataBook já
+  processado, com campos derivados `grupo_distribuidor`/`bandeirada`
+  que não existem na exportação bruta da ANP) — ver Pendências.
+- ✅ `raw-pendente-schema/` (pasta nova) — 3 arquivos sem tabela de
+  destino conhecida no BCU: `BASE_DE_DADOS_ACOMPANHAMENTO_DE_PRECOS_ANP`
+  (06/08/2026), `GLP_Vendas_Atual.csv`, `GLP_Entregas_Historico.csv`.
+  Puro backup — nenhum schema ou carga foi criado para eles.
+
 ## Por que este repositório existe
 
 A biblioteca do projeto DBF Intelligence no Claude.ai atingiu 175MB — bem
@@ -63,7 +86,19 @@ dbragafrederico-sys-dbf-intelligence-arquivo-bruto/   (GitHub, privado)
 ├── regulatorio-referencia/
 │   ├── Zoneamento_Uso_e_Ocupacao_do_Solo__Leis_org.pdf    # 15,5MB — caso Rodrigogaz/Mogi das Cruzes
 │   ├── NTEPEDPGDEA202201_GLP_e_Outros_Usos.pdf            # 12,0MB — nota técnica ANP
-│   └── 60783A_Geografia_Redes_Distribuicao_Gas_Canalizado_Brasil.pdf  # 5,5MB — referência setorial
+│   ├── 60783A_Geografia_Redes_Distribuicao_Gas_Canalizado_Brasil.pdf  # 5,5MB — referência setorial
+│   ├── Resolucao_ANP_950_2023_Distribuicao_Combustiveis_Liquidos.pdf  # autorização distribuição combustíveis líquidos
+│   ├── Resolucao_ANP_957_2023_Distribuicao_GLP.pdf                    # autorização distribuição GLP
+│   ├── Nota_Tecnica_23_2025_SDC_ANP_Assimetria_Precos_QAV.pdf         # assimetria de preços QAV 2023-2024
+│   ├── Nota_Tecnica_27_2025_SDC_ANP_Assimetria_Precos_GLP.pdf         # assimetria de preços GLP revenda 2023-2024
+│   └── Decreto_23467_2025_Mogi_das_Cruzes_Uso_Ocupacao_Solo.pdf       # caso Rodrigogaz/Mogi das Cruzes
+├── exportacoes-anp-brutas/
+│   ├── exportacao_postos_revendedores_14_08_2026.xlsx     # bruto ANP — destino: posto_combustivel (pendente)
+│   └── exportacao_revendas_GLP_14_08_2026.xlsx            # bruto ANP — destino: revenda_glp (pendente)
+├── raw-pendente-schema/
+│   ├── BASE_DE_DADOS_ACOMPANHAMENTO_DE_PRECOS_ANP_06_08_2026.xlsx  # sem tabela BCU definida
+│   ├── GLP_Vendas_Atual.csv                                # sem tabela BCU definida
+│   └── GLP_Entregas_Historico.csv                          # sem tabela BCU definida
 └── README.md
 ```
 
@@ -116,9 +151,28 @@ configuração persistente. O repositório é e deve continuar **privado**.
    clone→query como o do BCU, ou permanecem na biblioteca do Claude.ai.
    Não recomendado migrar agora — só se a biblioteca voltar a se
    aproximar do limite após esta Fase 1.
-3. CSVs de vendas/entregas ANP (GLP_Vendas_Atual, GLP_Entregas_Historico
-   etc., ~9,2MB) — candidatos de baixo custo-benefício para uma eventual
-   Fase 2.
+3. ~~CSVs de vendas/entregas ANP~~ — resolvido em 18/08/2026: backup feito
+   em `raw-pendente-schema/` (junto com `BASE_DE_DADOS_
+   ACOMPANHAMENTO_DE_PRECOS_ANP`), sem processamento — nenhuma tabela
+   BCU foi criada para eles ainda.
 4. Confirmar remoção dos 42 arquivos correspondentes na biblioteca do
    projeto Claude.ai, após validar que a recuperação a partir deste
    repositório está funcionando.
+5. **[NOVO 18/08/2026]** `exportacoes-anp-brutas/` — as 2 exportações
+   brutas ANP (postos revendedores, revendas GLP, 14/08/2026) estão
+   commitadas mas **não processadas**: `detectar_movimentacao.py` exige
+   o formato de DataBook já tratado (sheets `02_BASE_TRATADA`/
+   `02_BASE_POSTOS`, campos derivados `grupo_distribuidor`/`bandeirada`
+   que classificam bandeira/independência) — a exportação bruta da ANP
+   não tem esses campos, só o vínculo direto a distribuidor. Precisa de
+   decisão de Daniel: (a) produzir um DataBook v11 (GLP)/v5
+   (Combustíveis) a partir dessas exportações no mesmo processo já usado
+   para v10/v4, para então rodar `detectar_movimentacao.py` normalmente,
+   ou (b) definir a regra de classificação grupo_distribuidor/bandeirada
+   para o Claude Code implementar essa etapa. Ver tarefas pendentes A/B
+   no board da BCU (DataBook GLP v10→v11 / Combustíveis v4→v5).
+6. **[NOVO 18/08/2026]** `raw-pendente-schema/BASE_DE_DADOS_
+   ACOMPANHAMENTO_DE_PRECOS_ANP_06_08_2026.xlsx` — 70.543 linhas,
+   "Sistema de Levantamento de Preços" da SDC/ANP. Nenhuma tabela BCU
+   modela preços de revenda ainda — decisão de modelagem pendente antes
+   de qualquer carga (mesma pendência já listada como Tarefa B na BCU).
