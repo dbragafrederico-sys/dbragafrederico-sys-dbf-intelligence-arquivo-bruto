@@ -48,6 +48,17 @@ processamento:
   destino conhecida no BCU: `BASE_DE_DADOS_ACOMPANHAMENTO_DE_PRECOS_ANP`
   (06/08/2026), `GLP_Vendas_Atual.csv`, `GLP_Entregas_Historico.csv`.
   Puro backup — nenhum schema ou carga foi criado para eles.
+- ✅ `prototipos-historicos/` (pasta nova) — `detectar_movimentacao_raw_anp.py`
+  (233 linhas) + `LEIA-ME_contexto_arquivamento.md`. Protótipo v0.1 de
+  detecção de movimentação a partir de extração bruta ANP, encontrado
+  na biblioteca do Claude.ai durante auditoria de 18/08/2026 — nunca
+  havia sido commitado no `dbf-intelligence-bcu`, nunca esteve
+  conectado ao pipeline de produção. Valor histórico: já documentava o
+  mesmo bug (comparar `grupo_distribuidor` em vez de `vinculacao_a`
+  gera falsos positivos maciços de "mudança de bandeira") que foi
+  redescoberto e corrigido independentemente na sessão de 18/08/2026 —
+  ver `LEIA-ME_contexto_arquivamento.md` para o histórico completo.
+  **Registro histórico apenas — não integrar ao pipeline ativo.**
 
 ## Por que este repositório existe
 
@@ -99,6 +110,9 @@ dbragafrederico-sys-dbf-intelligence-arquivo-bruto/   (GitHub, privado)
 │   ├── BASE_DE_DADOS_ACOMPANHAMENTO_DE_PRECOS_ANP_06_08_2026.xlsx  # sem tabela BCU definida
 │   ├── GLP_Vendas_Atual.csv                                # sem tabela BCU definida
 │   └── GLP_Entregas_Historico.csv                          # sem tabela BCU definida
+├── prototipos-historicos/
+│   ├── detectar_movimentacao_raw_anp.py       # protótipo v0.1, nunca integrado ao pipeline — só registro histórico
+│   └── LEIA-ME_contexto_arquivamento.md       # por que tem valor histórico e por que não foi usado
 └── README.md
 ```
 
